@@ -2,6 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
     <title>SHOP24</title>
 </head>
 <body>
@@ -9,11 +12,60 @@
     <div class="header__wrapper">
         <nav class="navigation">
             <a class="navigation__logo logo logo--header">
-                <img class="logo-image" src="../src/img/logo-orange.png" alt="Логитип магазина SHOP24 New Look">
+                <img class="logo-image" src="../../img/logo-orange.png" width="198" height="56"
+                     alt="Логитип магазина SHOP24 New Look">
             </a>
-            <form class="navigation__search search" action="https://echo.htmlacademy.ru" method="post" name="search">
-                <input class="navigation__input input input__search" type="search" name="search-field" placeholder="Поиск по сайту" aria-label="Поле поиск по сайту">
+            <form class="navigation__search search" action="#" method="post" name="search">
+                <input class="navigation__input input input__search" type="search" name="search-field"
+                       placeholder="Поиск по сайту" aria-label="Поле поиск по сайту">
             </form>
+            <div class="navigation__wrapper catalog-navigation">
+                <ul class="navigation__list catalog-navigation__list">
+                    <li class="catalog-navigation__item">
+                        <a class="catalog-navigation__link" href="#">
+                            Одежда и аксессуары
+                        </a>
+                        <ul class="catalog-navigation__submenu submenu" aria-label="Подраздел меню одежда и аксессуары">
+                            <li class="submenu__item">
+                                <a class="submenu__link" href="#">
+                                    Женская одежда
+                                </a>
+                                <a class="submenu__link" href="#">
+                                    Мужская одежда
+                                </a>
+                                <a class="submenu__link" href="#">
+                                    Аксессуары
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="catalog-navigation__item">
+                        <a class="catalog-navigation__link" href="#">
+                            Обувь
+                        </a>
+                    </li>
+                    <li class="catalog-navigation__item">
+                        <a class="catalog-navigation__link" href="#">
+                            Украшения
+                        </a>
+                    </li>
+                    <li class="catalog-navigation__item">
+                        <a class="catalog-navigation__link" href="#">
+                            Красота и здоровье
+                        </a>
+                    </li>
+                    <li class="catalog-navigation__item">
+                        <a class="catalog-navigation__link" href="#">
+                            Товары для дома
+                        </a>
+                    </li>
+                    <li class="catalog-navigation__item">
+                        <a class="catalog-navigation__link" href="#">
+                            Товары для кухни
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <ul class="navigation__list user-list">
                 <li class="user-list__item authorization">
                     <p class="authorization__author-name">
@@ -30,6 +82,15 @@
                         </p>
                     </a>
                 </li>
+                <li class="user-list__item user-list__item--hidden etc">
+                    <a class="etc__link" href="#navigation">
+                        <p class="etc">
+                        <span class="visually-hidden">
+                            Далее
+                        </span>
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -43,70 +104,215 @@
         </span>
         </div>
         <div class="other-options__media">
-            <a class="other-options__link other-options__link--blog">
+            <a class="other-options__link other-options__link--blog" href="#">
                 Звездный блог
             </a>
-            <a class="other-options__link other-options__link--youtube">
+            <a class="other-options__link other-options__link--youtube" href="#">
                 Смотрите нас на YouTube
             </a>
-            <a class="other-options__link other-options__link--live">
+            <a class="other-options__link other-options__link--live" href="#">
                 Смотрите наш прямой эфир
             </a>
         </div>
     </div>
-    <div class="header__wrapper">
-        <nav class="navigation catalog-navigation">
-            <ul class="navigation__list catalog-navigation__list">
-                <li class="catalog-navigation__item">
-                    <a class="catalog-navigation__link" href="#">
-                        Одежда и аксессуары
+</header>
+<main class="main">
+    <h1 class="main__title visually-hidden">
+        Магазин SHOP 24
+    </h1>
+    <section class="basket">
+        <h2 class="basket__title">
+            Ваша корзина
+        </h2>
+        <table class="basket__list products">
+            <thead class="products__list-header">
+            <tr class="products__header">
+                <th class="products__caption">
+                    Товар
+                </th>
+                <th class="products__caption">
+                    Описание
+                </th>
+                <th class="products__caption">
+                    Количество
+                </th>
+                <th class="products__caption">
+                    Цена
+                </th>
+                <th class="products__caption">
+                    Удалить
+                </th>
+            </tr>
+            </thead>
+            <tr class="products__item">
+                <td class="products__image">
+                    <img class="product__image-catalog" src="../../img/photo-catalog-dress.jpg" width="178" height="178"
+                         alt="Изображение товара">
+                </td>
+                <td class="products__description">
+                    <h3 class="products__title">
+                        Платье-миди с расклешенной юбкой
+                    </h3>
+                    <p class="product__article">
+                        Код:
+                        <span class="products__article-value">
+                            82039-11
+                        </span>
+                    </p>
+                    <p class="product__option">
+                        Размер:
+                        <span class="products__option-value">
+                            44
+                        </span>
+                    </p>
+                    <p class="product__option">
+                        Цвет:
+                        <span class="products__option-value">
+                            синий
+                        </span>
+                    </p>
+                </td>
+                <td class="products__number">
+                    <div class="products__wrapper">
+                        <button class="products__button button button--min" type="button">
+                            <span class="visually-hidden">
+                                Убрать
+                            </span>
+                        </button>
+                        <input class="product__counter" type="number" value="1" min="1">
+                        <button class="products__button button button--max" type="button">
+                            <span class="visually-hidden">
+                                Добавить
+                            </span>
+                        </button>
+                    </div>
+                </td>
+                <td class="products__price">
+                    <p class="products__price-value">
+                        2 450 руб.
+                    </p>
+                </td>
+                <td class="products__delete">
+                    <button class="product__button button button--delete">
+                        <span class="visually-hidden">
+                            Удалить
+                        </span>
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <div class="basket__wrapper">
+            <form class="basket__promocode" action="#" method="post" name="promo">
+                <p class="basket__promocode-slogan">
+                    Есть промокод?
+                </p>
+                <input class="basket__promocode-field" type="password" name="promocode" placeholder="Введите промокод">
+                <button class="basket__button button button--toapply" type="submit">
+                    Применить
+                </button>
+            </form>
+            <div class="basket__calculation">
+                <table class="basket__calculation-table">
+                    <tr class="basket__calculation-stroke">
+                        <td class="basket__calculation-name">
+                            Сумма заказа:
+                        </td>
+                        <td class="basket__calculation-sum">
+                            9 800 руб.
+                        </td>
+                    </tr>
+                    <tr class="basket__calculation-stroke">
+                        <td class="basket__calculation-name basket__calculation-name--selection">
+                            Промокод:
+                        </td>
+                        <td class="basket__calculation-sum basket__calculation-sum--selection">
+                            -1 800 руб.
+                        </td>
+                    </tr>
+                    <tr class="basket__calculation-stroke">
+                        <td class="basket__calculation-name">
+                            Всего:
+                        </td>
+                        <td class="basket__calculation-sum">
+                            8 000 руб.
+                        </td>
+                    </tr>
+                </table>
+                <button class="basket__calculation-button button button--order">
+                    Оформить заказ
+                </button>
+            </div>
+        </div>
+        <section class="add">
+            <h2 class="add__title title">
+                Добавьте к вашему заказу
+            </h2>
+            <ul class="add__list">
+                <li class="add__item">
+                    <a class="add__link">
+                        <h3 class="add__title">
+                            Солнечные очки зеленого цвета в стиле ретро
+                        </h3>
+                        <img class="add__image" src="../../img/photo-catalog-bag.jpg" width="276" height="276"
+                             alt="Изображение товара">
+                        <p class="add__price">
+                            2 450 руб.
+                        </p>
                     </a>
-                    <ul class="catalog-navigation__submenu submenu" aria-label="Подраздел меню одежда и аксессуары">
-                        <li class="submenu__item">
-                            <a class="submenu__link" href="#">
-                                Женская одежда
-                            </a>
-                            <a class="submenu__link" href="#">
-                                Мужская одежда
-                            </a>
-                            <a class="submenu__link" href="#">
-                                Аксессуары
-                            </a>
-                        </li>
-                    </ul>
                 </li>
-                <li class="catalog-navigation__item">
-                    <a class="catalog-navigation__link" href="#">
-                        Обувь
+                <li class="add__item">
+                    <a class="add__link">
+                        <h3 class="add__title">
+                            Шляпа
+                        </h3>
+                        <img class="add__image" src="../../img/photo-catalog-had.jpg" width="276" height="276"
+                             alt="Изображение товара">
+                        <p class="add__price">
+                            800 руб.
+                        </p>
                     </a>
                 </li>
-                <li class="catalog-navigation__item">
-                    <a class="catalog-navigation__link" href="#">
-                        Украшения
+                <li class="add__item">
+                    <a class="add__link">
+                        <h3 class="add__title">
+                            Платье-миди с расклешенной юбкой
+                        </h3>
+                        <img class="add__image" src="../../img/photo-catalog-socks.jpg" width="276" height="276"
+                             alt="Изображение товара">
+                        <p class="add__price">
+                            2 450 руб.
+                        </p>
                     </a>
                 </li>
-                <li class="catalog-navigation__item">
-                    <a class="catalog-navigation__link" href="#">
-                        Красота и здоровье
-                    </a>
-                </li>
-                <li class="catalog-navigation__item">
-                    <a class="catalog-navigation__link" href="#">
-                        Товары для дома
-                    </a>
-                </li>
-                <li class="catalog-navigation__item">
-                    <a class="catalog-navigation__link" href="#">
-                        Товары для кухни
+                <li class="add__item">
+                    <a class="add__link">
+                        <h3 class="add__title">
+                            Платье-миди с расклешенной юбкой
+                        </h3>
+                        <img class="add__image" src="../../img/photo-catalog-dress.jpg" width="276" height="276"
+                             alt="Изображение товара">
+                        <p class="add__price">
+                            2 450 руб.
+                        </p>
                     </a>
                 </li>
             </ul>
-        </nav>
+        </section>
+    </section>
+</main>
+<footer class="footer" id="navigation">
+    <div class="footer__wrapper mailing">
+        <b class="mailing__slogan">
+            Подпишитесь на наши рассылки<br>
+            и узнавайте первыми об акциях и распродажах
+        </b>
+        <form class="mailing__form" action="#" method="post" name="search">
+            <input class="mailing__field" type="email" name="mail" placeholder="Введите Ваш e-mail">
+            <button class="mailing__button button button--subscribe" type="submit">
+                Подписаться
+            </button>
+        </form>
     </div>
-</header>
-
-
-<footer class="footer">
     <div class="footer__wrapper social">
         <h3 class="social__title">
             SHOP24 в социальных сетях:
@@ -165,7 +371,7 @@
     </div>
     <div class="footer__wrapper">
         <a class="footer__logo logo logo--footer" href="#">
-            <img class="logo__image" src="../../img/logo-grey.png" alt="Логотип SHOP 24">
+            <img class="logo__image" src="../../img/logo-grey.png" width="100" height="56" alt="Логотип SHOP 24">
         </a>
         <div class="footer__telephone telephone">
             <a class="telephone__number" href="tel:89005007555">
@@ -332,11 +538,11 @@
         <p class="copyright__description">
             При использовании материалов сайта ссылка на www.shop24.com обязательна.
         </p>
-        <p class="copyright__description" >
+        <p class="copyright__description">
             115193, Москва, ул. Кожуховская 5-я, д. 9, помещение VII
         </p>
-        <p class="copyright__description" >
-            Телефон  8 800 500-75-55
+        <p class="copyright__description">
+            Телефон 8 800 500-75-55
         </p>
     </div>
 </footer>
