@@ -9,9 +9,9 @@
     <div class="header__wrapper">
         <nav class="navigation">
             <a class="navigation__logo logo logo--header">
-                <img class="logo-image" src="../src/img/logo-orange.png" alt="Логитип магазина SHOP24 New Look">
+                <img class="logo-image" src="../../img/logo-orange.png" width="198" height="56" alt="Логитип магазина SHOP24 New Look">
             </a>
-            <form class="navigation__search search" action="https://echo.htmlacademy.ru" method="post" name="search">
+            <form class="navigation__search search" action="#" method="post" name="search">
                 <input class="navigation__input input input__search" type="search" name="search-field" placeholder="Поиск по сайту" aria-label="Поле поиск по сайту">
             </form>
             <ul class="navigation__list user-list">
@@ -104,9 +104,198 @@
         </nav>
     </div>
 </header>
-
-
+<main class="main">
+    <h1 class="main__title visually-hidden">
+        Магазин SHOP 24
+    </h1>
+    <section class="basket">
+        <h2 class="basket__title">
+            Ваша корзина
+        </h2>
+        <table class="basket__list products">
+            <thead class="products__list-header">
+            <tr class="products__header">
+                <th class="products__caption">
+                    Товар
+                </th>
+                <th class="products__caption">
+                    Описание
+                </th>
+                <th class="products__caption">
+                    Количество
+                </th>
+                <th class="products__caption">
+                    Цена
+                </th>
+                <th class="products__caption">
+                    Удалить
+                </th>
+            </tr>
+            </thead>
+            <tr class="products__item">
+                <td class="products__image">
+                    <img class="product__image-catalog" src="../../img/photo-catalog-dress.jpg" width="178" height="178" alt="Изображение товара">
+                </td>
+                <td class="products__description">
+                    <h3 class="products__title">
+                        Платье-миди с расклешенной юбкой
+                    </h3>
+                    <p class="product__article">
+                        Код:
+                        <span class="products__article-value">
+                            82039-11
+                        </span>
+                    </p>
+                    <p class="product__option">
+                        Размер:
+                        <span class="products__option-value">
+                            44
+                        </span>
+                    </p>
+                    <p class="product__option">
+                        Цвет:
+                        <span class="products__option-value">
+                            синий
+                        </span>
+                    </p>
+                </td>
+                <td class="products__number">
+                    <div class="products__wrapper">
+                        <button class="products__button button button--min" type="button">
+                            <span class="visually-hidden">
+                                Убрать
+                            </span>
+                        </button>
+                        <input class="product__counter" type="number" value="1" min="1">
+                        <button class="products__button button button--max" type="button">
+                            <span class="visually-hidden">
+                                Добавить
+                            </span>
+                        </button>
+                    </div>
+                </td>
+                <td class="products__price">
+                    <p class="products__price-value">
+                        2 450 руб.
+                    </p>
+                </td>
+                <td class="products__delete">
+                    <button class="product__button button button--delete">
+                        <span class="visually-hidden">
+                            Удалить
+                        </span>
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <div class="basket__wrapper">
+            <form class="basket__promocode" action="#" method="post" name="promo">
+                <p class="basket__promocode-slogan">
+                    Есть промокод?
+                </p>
+                <input class="basket__promocode-field" type="password" name="promocode" placeholder="Введите промокод">
+                <button class="basket__button button button--toapply" type="submit">
+                    Применить
+                </button>
+            </form>
+            <div class="basket__calculation">
+                <table class="basket__calculation-table">
+                    <tr class="basket__calculation-stroke">
+                    <td class="basket__calculation-name">
+                        Сумма заказа:
+                    </td>
+                    <td class="basket__calculation-sum">
+                        9 800 руб.
+                    </td>
+                </tr>
+                    <tr class="basket__calculation-stroke">
+                        <td class="basket__calculation-name basket__calculation-name--selection">
+                            Промокод:
+                        </td>
+                        <td class="basket__calculation-sum basket__calculation-sum--selection">
+                            -1 800 руб.
+                        </td>
+                    </tr>
+                    <tr class="basket__calculation-stroke">
+                        <td class="basket__calculation-name">
+                            Всего:
+                        </td>
+                        <td class="basket__calculation-sum">
+                            8 000 руб.
+                        </td>
+                    </tr>
+                </table>
+                <button class="basket__calculation-button button button--order">
+                    Оформить заказ
+                </button>
+            </div>
+        </div>
+        <section class="add">
+            <h2 class="add__title title">
+                Добавьте к вашему заказу
+            </h2>
+            <ul class="add__list">
+                <li class="add__item">
+                    <a class="add__link">
+                    <h3 class="add__title">
+                        Солнечные очки зеленого цвета в стиле ретро
+                    </h3>
+                    <img class="add__image" src="../../img/photo-catalog-bag.jpg" width="276" height="276" alt="Изображение товара">
+                    <p class="add__price">
+                        2 450 руб.
+                    </p>
+                    </a>
+                </li>
+                <li class="add__item">
+                    <a class="add__link">
+                        <h3 class="add__title">
+                           Шляпа
+                        </h3>
+                        <img class="add__image" src="../../img/photo-catalog-had.jpg" width="276" height="276" alt="Изображение товара">
+                        <p class="add__price">
+                            800 руб.
+                        </p>
+                    </a>
+                </li>
+                <li class="add__item">
+                    <a class="add__link">
+                        <h3 class="add__title">
+                            Платье-миди с расклешенной юбкой
+                        </h3>
+                        <img class="add__image" src="../../img/photo-catalog-socks.jpg" width="276" height="276" alt="Изображение товара">
+                        <p class="add__price">
+                            2 450 руб.
+                        </p>
+                    </a>
+                </li>
+                <li class="add__item">
+                    <a class="add__link">
+                        <h3 class="add__title">
+                            Платье-миди с расклешенной юбкой
+                        </h3>
+                        <img class="add__image" src="../../img/photo-catalog-dress.jpg" width="276" height="276" alt="Изображение товара">
+                        <p class="add__price">
+                            2 450 руб.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </section>
+</main>
 <footer class="footer">
+    <div class="footer__wrapper mailing">
+        <b class="mailing__slogan">
+            Подпишитесь на наши рассылки<br>
+            и узнавайте первыми об акциях и распродажах
+        </b>
+        <form class="mailing__form" action="#" method="post" name="search" >
+        <input class="mailing__field" type="email" name="mail" placeholder="Введите Ваш e-mail">
+        <button class="mailing__button button button--subscribe" type="submit">
+            Подписаться
+        </button>
+        </form>
+    </div>
     <div class="footer__wrapper social">
         <h3 class="social__title">
             SHOP24 в социальных сетях:
@@ -165,7 +354,7 @@
     </div>
     <div class="footer__wrapper">
         <a class="footer__logo logo logo--footer" href="#">
-            <img class="logo__image" src="../../img/logo-grey.png" alt="Логотип SHOP 24">
+            <img class="logo__image" src="../../img/logo-grey.png" width="100" height="56" alt="Логотип SHOP 24">
         </a>
         <div class="footer__telephone telephone">
             <a class="telephone__number" href="tel:89005007555">
