@@ -52,7 +52,7 @@ img {
 .button {
     display: inline-block;
     text-align: center;
-    vertical-align: center;
+    vertical-align: middle;
     width: auto;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -70,10 +70,22 @@ img {
     background-color: #b7b7b7;
 }
 
+.button--toapply:hover,
+.button--toapply:focus,
+.button--toapply:active {
+    background-color: #ff8a00;
+}
+
 .button--order {
     min-width: 180px;
 
     background-color: #ff6c00;
+}
+
+.button--order:hover,
+.button--order:focus,
+.button--order:active {
+    background-color: #ff8a00;
 }
 
 .button--subscribe {
@@ -86,6 +98,123 @@ img {
     background-color: #2a2a2a;
     border-radius: 15px;
 }
+
+.button--min,
+.button--max {
+    position: relative;
+
+    width: 20px;
+    height: 23px;
+    padding: 0;
+
+    border-radius: 0;
+}
+
+.button--min::before {
+    content: "";
+
+    display: inline-block;
+    width: 6px;
+    height: 1px;
+
+    vertical-align: middle;
+    text-align: center;
+
+    background-color: #8d8d8d;
+}
+
+.button--max::before {
+    content: "";
+
+    display: inline-block;
+    width: 11px;
+    height: 1px;
+
+    vertical-align: middle;
+    text-align: center;
+
+    background-color: #8d8d8d;
+}
+
+.button--max::after {
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    left: 50%;
+
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+
+    vertical-align: middle;
+    text-align: center;
+
+    background-color: #8d8d8d;
+}
+
+.button--product:focus {
+    outline: none;
+}
+
+.button--product:hover::after,
+.button--product:hover::before,
+.button--product:active::after,
+.button--product:active::before,
+.button--product:focus::after,
+.button--product:focus::before {
+    background-color: #ff6c00;
+}
+
+
+.button--delete {
+    position: relative;
+
+    width: 100%;
+    height: 20px;
+    padding: 0;
+
+    font-size: 0;
+
+    border-radius: 0;
+}
+
+.button--delete::before,
+.button--delete::after {
+     content: "";
+
+     position: absolute;
+     top: 30%;
+     left: 40%;
+
+     display: block;
+     width: 16px;
+     height: 1px;
+
+     background-color: #8d8d8d;
+ }
+
+.button--delete::before {
+     transform: rotate(45deg);
+ }
+
+.button--delete::after {
+     transform: rotate(-45deg);
+ }
+
+.button--delete:focus {
+    outline: none;
+}
+
+.button--delete:hover::before,
+.button--delete:hover::after,
+.button--delete:focus::before,
+.button--delete:focus::after,
+.button--delete:active::before,
+.button--delete:active::after {
+    background-color: #ff6c00;
+}
+
 /*logo*/
 /*container*/
 
@@ -394,21 +523,15 @@ img {
 /*main*/
 /*basket*/
 .basket {
-    position: relative;
-
     width: 100%;
     margin-top: 70px;
-    border-top: 2px solid #d9d9d9;
-}
 
-.basket__wrapper {
-    width: auto;
+    border-top: 2px solid #d9d9d9;
 }
 
 .basket__title {
     display: block;
     max-width: 178px;
-    height: auto;
     margin: 0 auto;
     margin-top: -15px;
     padding-bottom: 58px;
@@ -421,11 +544,196 @@ img {
     background-color: #ffffff;
 }
 
+.basket__promocode-slogan {
+    margin: 0;
+    padding-bottom: 10px;
+}
 
+.basket__promocode-field {
+    width: 277px;
+    height: 44px;
+    padding-left: 15px;
 
+    border:1px solid #dadada;
+}
+
+.basket__promocode-field::placeholder {
+    content: "";
+
+    font-size: 14px;
+    line-height: calc(14px * 1.2);
+    color: #d0d0d0;
+}
+
+.basket__calculation-stroke {
+    display: block;
+    width: 100%;
+}
+
+.basket__calculation-stroke:last-child {
+    margin-top: 35px;
+}
+
+.basket__calculation-name {
+    width: auto;
+    min-width: 273px;
+}
+
+.basket__calculation-name--selection,
+.basket__calculation-sum--selection {
+    color: #ff6c00;
+}
+
+.basket__wrapper {
+    margin-bottom: 110px;
+}
 
 /*products*/
+.products {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+
+    border-collapse: collapse;
+    border: none;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.products__list-header {
+    width: 100%;
+}
+
+.products__header {
+    width: 100%;
+}
+
+.products__caption {
+    padding-bottom: 38px;
+
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(18px * 1.2);
+}
+
+.products__caption--center {
+    text-align: center;
+}
+
+.products__cell {
+    vertical-align: top;
+    padding-bottom: 30px;
+}
+
+.product__image-catalog {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.products__title,
+.product__option {
+    margin: 0;
+    font-weight: 500;
+}
+
+.product__article {
+    font-size: 14px;
+    line-height: calc(14px * 1.2);
+    color: #808080;
+}
+
+.products__wrapper {
+    max-width: 60px;
+    height: auto;
+
+    text-align: center;
+    font-size: 0;
+
+}
+
+.product__counter {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 20px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Helvetica", "Arial", "sans-serif";
+    font-size: 20px;
+    line-height: calc(20px * 1.2);
+
+
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+.product__counter::-webkit-outer-spin-button,
+.product__counter::-webkit-inner-spin-button {
+    margin: 0;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+.product__counter:hover,
+.product__counter:focus {
+    outline: none;
+    -moz-appearance: number-input;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.products__price-value {
+    margin: 0;
+
+    font-weight: 500;
+    text-align: center;
+}
+
+
 /*add*/
+.add {
+    width: 100%;
+
+    border-top: 2px solid #d9d9d9;
+}
+
+.add__title {
+    display: block;
+    max-width: 315px;
+    margin: 0 auto;
+    margin-top: -15px;
+    padding-bottom: 30px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: calc(22px * 1.2);
+
+    background-color: #ffffff;
+}
+
+.add__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.add__caption {
+    font-weight: 400;
+}
+
+
 /*footer*/
 /*mailing*/
 /*social*/
