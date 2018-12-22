@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
     <title>SHOP24</title>
@@ -16,23 +17,27 @@
                      alt="Логитип магазина SHOP24 New Look">
             </a>
             <form class="navigation__search search" action="#" method="post" name="search">
-                <input class="navigation__input input input__search" type="search" name="search-field"
+                <input class="search__input" type="search" name="search-field"
                        placeholder="Поиск по сайту" aria-label="Поле поиск по сайту">
             </form>
             <div class="navigation__wrapper catalog-navigation">
                 <ul class="navigation__list catalog-navigation__list">
                     <li class="catalog-navigation__item">
-                        <a class="catalog-navigation__link" href="#">
+                        <a class="catalog-navigation__link catalog-navigation__link--active" href="#">
                             Одежда и аксессуары
                         </a>
-                        <ul class="catalog-navigation__submenu submenu" aria-label="Подраздел меню одежда и аксессуары">
+                        <ul class="catalog-navigation__submenu submenu submenu--header" aria-label="Подраздел меню одежда и аксессуары">
                             <li class="submenu__item">
-                                <a class="submenu__link" href="#">
+                                <a class="submenu__link submenu__link--active" href="#">
                                     Женская одежда
                                 </a>
+                            </li>
+                        <li class="submenu__item">
                                 <a class="submenu__link" href="#">
                                     Мужская одежда
                                 </a>
+                        </li>
+                            <li class="submenu__item">
                                 <a class="submenu__link" href="#">
                                     Аксессуары
                                 </a>
@@ -66,29 +71,32 @@
                     </li>
                 </ul>
             </div>
-            <ul class="navigation__list user-list">
-                <li class="user-list__item authorization">
-                    <p class="authorization__author-name">
-                        Анастасия
-                    </p>
+            <ul class="navigation__list user-navigation">
+                <li class="user-navigation__item">
+                    <a class="user-navigation__link user-navigation__link--authorization" href="#">
+                        <p class="user-navigation__description visually-hidden">
+                            Вход в личный кабинет:
+                        </p>
+                        <p class="user-navigation__description">
+                            Анастасия
+                        </p>
+                    </a>
                 </li>
-                <li class="user-list__item basket">
-                    <a class="basket__link" href="#">
-                        <p class="basket__title">
+                <li class="user-navigation__item">
+                    <a class="user-navigation__link user-navigation__link--basket" href="#">
+                        <p class="user-navigation__description">
                             В корзине:
                         </p>
-                        <p class="basket__amount">
+                        <p class="user-navigation__description">
                             4 товара
                         </p>
                     </a>
                 </li>
-                <li class="user-list__item user-list__item--hidden etc">
-                    <a class="etc__link" href="#navigation">
-                        <p class="etc">
+                <li class="user-navigation__item user-navigation__item--hidden">
+                    <a class="user-navigation__link user-navigation__link--etc" href="#navigation">
                         <span class="visually-hidden">
                             Далее
                         </span>
-                        </p>
                     </a>
                 </li>
             </ul>
@@ -387,7 +395,7 @@
         </div>
         <ul class="footer__navigation site-navigation">
             <li class="site-navigation__item">
-                <a class="site-navigation__link" href="#">
+                <a class="site-navigation__title" href="#">
                     Каталог товаров
                 </a>
                 <ul class="site-navigation__submenu submenu submenu--footer">
