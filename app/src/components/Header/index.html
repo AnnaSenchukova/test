@@ -12,16 +12,52 @@
 <header class="header">
     <div class="header__wrapper">
         <nav class="navigation">
-            <a class="navigation__logo logo logo--header">
-                <img class="logo-image" src="../../img/logo-orange.png" width="198" height="56"
-                     alt="Логитип магазина SHOP24 New Look">
+            <div class="navigation__wrapper container">
+            <a class="navigation__item logo logo--header">
+                <picture>
+                <source media="(min-width: 768px)" srcset="../../img/logo-orange.png">
+                <img class="logo-image" src="../../img/logo-mobile.png" alt="Логитип магазина SHOP24 New Look">
+                </picture>
             </a>
-            <form class="navigation__search search" action="#" method="post" name="search">
+            <form class="navigation__item search" action="#" method="post" name="search">
                 <input class="search__input" type="search" name="search-field"
                        placeholder="Поиск по сайту" aria-label="Поле поиск по сайту">
             </form>
-            <div class="navigation__wrapper catalog-navigation">
-                <ul class="navigation__list catalog-navigation__list">
+            <ul class="navigation__list user-navigation">
+                <li class="user-navigation__item">
+                    <a class="user-navigation__link user-navigation__link--authorization" href="#">
+                        <p class="user-navigation__description visually-hidden">
+                            Вход в личный кабинет:
+                        </p>
+                        <p class="user-navigation__description">
+                            Анастасия
+                        </p>
+                    </a>
+                </li>
+                <li class="user-navigation__item">
+                    <a class="user-navigation__link user-navigation__link--basket" href="#">
+                        <p class="user-navigation__description">
+                            В корзине:
+                        </p>
+                        <p class="user-navigation__description">
+                            4 товара
+                        </p>
+                    </a>
+                </li>
+                <li class="user-navigation__item user-navigation__item--hidden">
+                    <a class="user-navigation__link user-navigation__link--etc" href="#navigation">
+                        <span class="visually-hidden">
+                            Далее
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <div class="navigation__catalog catalog-navigation">
+                <h3 class="catalog-navigation__title">
+                    Каталог
+                </h3>
+                <ul class="navigation__list catalog-navigation__list container">
                     <li class="catalog-navigation__item">
                         <a class="catalog-navigation__link catalog-navigation__link--active" href="#">
                             Одежда и аксессуары
@@ -32,11 +68,11 @@
                                     Женская одежда
                                 </a>
                             </li>
-                        <li class="submenu__item">
+                            <li class="submenu__item">
                                 <a class="submenu__link" href="#">
                                     Мужская одежда
                                 </a>
-                        </li>
+                            </li>
                             <li class="submenu__item">
                                 <a class="submenu__link" href="#">
                                     Аксессуары
@@ -71,45 +107,17 @@
                     </li>
                 </ul>
             </div>
-            <ul class="navigation__list user-navigation">
-                <li class="user-navigation__item">
-                    <a class="user-navigation__link user-navigation__link--authorization" href="#">
-                        <p class="user-navigation__description visually-hidden">
-                            Вход в личный кабинет:
-                        </p>
-                        <p class="user-navigation__description">
-                            Анастасия
-                        </p>
-                    </a>
-                </li>
-                <li class="user-navigation__item">
-                    <a class="user-navigation__link user-navigation__link--basket" href="#">
-                        <p class="user-navigation__description">
-                            В корзине:
-                        </p>
-                        <p class="user-navigation__description">
-                            4 товара
-                        </p>
-                    </a>
-                </li>
-                <li class="user-navigation__item user-navigation__item--hidden">
-                    <a class="user-navigation__link user-navigation__link--etc" href="#navigation">
-                        <span class="visually-hidden">
-                            Далее
-                        </span>
-                    </a>
-                </li>
-            </ul>
         </nav>
     </div>
     <div class="header__wrapper other-options">
         <div class="other-options__telephone">
             <a class="other-options__number" href="tel:89005007555">
                 8 (800) 500-75-55
-            </a>
-            <span class="other-options__descriptions">
+                <span class="other-options__descriptions">
           Бесплатный звонок по России
         </span>
+            </a>
+
         </div>
         <div class="other-options__media">
             <a class="other-options__link other-options__link--blog" href="#">
@@ -312,7 +320,9 @@
     <div class="footer__wrapper mailing">
         <div class="mailing__wrapper container">
         <b class="mailing__slogan">
-            Подпишитесь на наши рассылки<br>
+            Подпишитесь на наши рассылки
+        </b>
+            <b class="mailing__slogan mailing__slogan--hidden">
             и узнавайте первыми об акциях и распродажах
         </b>
         <form class="mailing__form" action="#" method="post" name="search">
@@ -323,8 +333,8 @@
         </form>
         </div>
     </div>
-    <div class="container">
-    <div class="footer__wrapper social">
+
+    <div class="footer__wrapper social container">
         <h3 class="social__title">
             SHOP24 в социальных сетях:
         </h3>
@@ -557,7 +567,7 @@
             Телефон 8 800 500-75-55
         </p>
     </div>
-    </div>
+
 </footer>
 </body>
 </html>
