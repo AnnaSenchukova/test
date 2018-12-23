@@ -64,17 +64,19 @@ img {
     border-radius: 30px;
 }
 
+.button:hover,
+.button:active,
+.button:focus {
+    background-color: #ff6c00;
+    outline: none;
+}
+
 .button--toapply {
     min-width: 180px;
 
     background-color: #b7b7b7;
 }
 
-.button--toapply:hover,
-.button--toapply:focus,
-.button--toapply:active {
-    background-color: #ff8a00;
-}
 
 .button--order {
     min-width: 180px;
@@ -82,13 +84,11 @@ img {
     background-color: #ff6c00;
 }
 
-.button--order:hover,
-.button--order:focus,
-.button--order:active {
-    background-color: #ff8a00;
-}
+
 
 .button--subscribe {
+    vertical-align: bottom;
+    height: 30px;
     padding: 8px 10px;
 
     font-family: "Helvetica", "Arial", "sans-serif";
@@ -98,6 +98,8 @@ img {
     background-color: #2a2a2a;
     border-radius: 15px;
 }
+
+
 
 .button--min,
 .button--max {
@@ -777,8 +779,296 @@ img {
 
 
 /*footer*/
+.footer {
+    background-color: #2a2a2a;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
 /*mailing*/
+.mailing {
+    width: 100%;
+
+    background-color: #ffffff;
+}
+
+.mailing__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.mailing__wrapper::before {
+    content: "";
+
+    display: block;
+    width: 61px;
+    height: 43px;
+    margin-right: 20px;
+    margin-bottom: -5px;
+
+    background-image: url("../../img/icon-mail.png");
+    background-repeat: no-repeat;
+}
+
+.mailing__slogan {
+    font-family: "Helvetica", "Arial", "sans-serif";
+    font-weight: 700;
+    font-style: italic;
+    color: #2a2a2a;
+}
+
+
+.mailing__field {
+    width: 292px;
+    height: 30px;
+    padding-left: 15px;
+
+    border: 1px solid #f2f2f2;
+    border-radius: 30px;
+    box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.mailing__field::placeholder {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: calc(14px * 1.2);
+    color: #8b8b8b;
+}
+
 /*social*/
-/*copyright*/
-/*site-navigation*/
+
+.social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social__title {
+    width: max-content;
+    margin: 0;
+    margin-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 36px;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+ }
+
+.social__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 380px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.social__item {
+    width: min-content;
+    margin-right: 1.25%;
+}
+
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.social__link {
+    position: relative;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+}
+
+.social__link--vk::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 16px;
+    height: 17px;
+
+    background-image: url("../../img/icon-vk.png");
+    background-repeat: no-repeat;
+}
+
+.social__link--fb::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 11px;
+    height: 22px;
+
+    background-image: url("../../img/icon-fb.png");
+    background-repeat: no-repeat;
+}
+
+.social__link--class::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 14px;
+    height: 23px;
+
+    background-image: url("../../img/icon-class.png");
+    background-repeat: no-repeat;
+}
+
+.social__link--pinterest::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 19px;
+    height: 24px;
+
+    background-image: url("../../img/icon-pinterest.png");
+    background-repeat: no-repeat;
+}
+
+.social__link--pinme::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-image: url("../../img/icon-pinme.png");
+    background-repeat: no-repeat;
+}
+
+.social__link--instagram::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 21px;
+    height: 22px;
+
+    background-image: url("../../img/icon-inst.png");
+    background-repeat: no-repeat;
+}
+
+.social__link--youtube::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 22px;
+    height: 29px;
+
+    background-image: url("../../img/icon-youtube-soc.png");
+    background-repeat: no-repeat;
+}
+
+.social__link:hover,
+.social__link:focus {
+    border-color: #ff6c00;
+    outline: none;
+}
+
+.social__link:active {
+    border-color: rgba(255, 108, 0, 0.6);
+    opacity: 0.3;
+}
+
 /*telephone*/
+.telephone {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.telephone__number {
+    font-size: 30px;
+    line-height: calc(30px * 1.2);
+    color: #f3f3f3;
+}
+
+.telephone__descriptions {
+    padding-bottom: 10px;
+
+    font-size: 14px;
+    line-height: calc(14px * 1.2);
+    color: #f3f3f3;
+}
+
+/*site-navigation*/
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.site-navigation__item {
+    width: 20%;
+    margin-right: 3%;
+}
+
+.site-navigation__link {
+        font-size: 18px;
+        color: #ffffff;
+}
+/*copyright*/
+.copyright {
+    width: 100%;
+    padding: 40px 0;
+    
+    text-align: center;
+}
+
+.copyright__description {
+    width: 100%;
+    margin: 0;
+
+    font-size: 12px;
+    line-height: calc(12px * 1.2);
+    color: #cacaca;
+}
