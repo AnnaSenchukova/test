@@ -132,14 +132,15 @@
         </div>
     </div>
 </header>
-<main class="main container">
+<main class="main">
     <h1 class="main__title visually-hidden">
         Магазин SHOP 24
     </h1>
     <section class="basket">
-        <h2 class="basket__title">
+        <h2 class="basket__title container">
             Ваша корзина
         </h2>
+        <div class="basket__wrapper-table container">
         <table class="basket__list products">
             <thead class="products__list-header">
             <tr class="products__header">
@@ -164,6 +165,20 @@
                 <td class="products__cell products__image">
                     <img class="product__image-catalog" src="../../img/photo-catalog-dress.jpg" width="178" height="178"
                          alt="Изображение товара">
+
+                    <div class="products__wrapper products__wrapper--counter">
+                        <button class="products__button button button--product button--min" type="button">
+                            <span class="visually-hidden">
+                                Убрать
+                            </span>
+                        </button>
+                        <input class="product__counter" type="number" value="1" min="1">
+                        <button class="products__button button button--product button--max" type="button">
+                            <span class="visually-hidden">
+                                Добавить
+                            </span>
+                        </button>
+                    </div>
                 </td>
                 <td class="products__cell products__description">
                     <h3 class="products__title">
@@ -186,6 +201,9 @@
                         <span class="products__option-value">
                             синий
                         </span>
+                    </p>
+                    <p class="products__price-value">
+                    2 450 руб.
                     </p>
                 </td>
                 <td class="products__cell products__number">
@@ -217,7 +235,8 @@
                 </td>
             </tr>
         </table>
-        <div class="basket__wrapper">
+        </div>
+        <div class="basket__wrapper container">
             <form class="basket__promocode" action="#" method="post" name="promo">
                 <p class="basket__promocode-slogan">
                     Есть промокод?
@@ -260,10 +279,10 @@
             </div>
         </div>
         <section class="add">
-            <h2 class="add__title title">
+            <h2 class="add__title title container">
                 Добавьте к вашему заказу
             </h2>
-            <ul class="add__list">
+            <ul class="add__list container">
                 <li class="add__item">
                     <a class="add__link">
                         <h3 class="add__caption">
