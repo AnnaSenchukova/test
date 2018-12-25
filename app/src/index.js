@@ -12,3 +12,4 @@ import Footer from './components/Footer/Footer'
 render(<Header/>, document.getElementById('header'))
 render(<Main/>, document.getElementById('main'))
 render(<Footer/>, document.getElementById('footer'))
+
