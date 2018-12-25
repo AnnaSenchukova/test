@@ -1,0 +1,184 @@
+/*button*/
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: #ffffff;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+    background-color: #ff6c00;
+    outline: none;
+}
+
+.button--toapply {
+    width: 29%;
+
+    font-size: 13px;
+    line-height: calc(13px * 1.2);
+
+    background-color: #b7b7b7;
+    border-radius: 20px;
+}
+
+.button--order {
+    width: 100%;
+    min-width: 180px;
+    margin-top: 30px;
+
+    background-color: #ff6c00;
+}
+
+.button--subscribe {
+    vertical-align: bottom;
+    height: 30px;
+    padding: 8px 10px;
+
+    font-family: "Helvetica", "Arial", "sans-serif";
+    font-size: 14px;
+    line-height: calc(14px * 1.2);
+
+    background-color: #2a2a2a;
+    border-radius: 15px;
+}
+
+.button--min,
+.button--max {
+    position: relative;
+
+    width: 20px;
+    height: 23px;
+    padding: 0;
+
+    border-radius: 0;
+}
+
+.button--min::before {
+    content: "";
+
+    display: inline-block;
+    width: 6px;
+    height: 1px;
+
+    vertical-align: middle;
+    text-align: center;
+
+    background-color: #8d8d8d;
+}
+
+.button--max::before {
+    content: "";
+
+    display: inline-block;
+    width: 11px;
+    height: 1px;
+
+    vertical-align: middle;
+    text-align: center;
+
+    background-color: #8d8d8d;
+}
+
+.button--max::after {
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    left: 50%;
+
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+
+    vertical-align: middle;
+    text-align: center;
+
+    background-color: #8d8d8d;
+}
+
+.button--product:focus {
+    outline: none;
+}
+
+.button--product:hover::after,
+.button--product:hover::before,
+.button--product:active::after,
+.button--product:active::before,
+.button--product:focus::after,
+.button--product:focus::before {
+    background-color: #ff6c00;
+}
+
+.button--delete {
+    position: relative;
+
+    width: 100%;
+    height: 20px;
+    padding: 0;
+
+    font-size: 0;
+
+    border-radius: 0;
+}
+
+.button--delete::before,
+.button--delete::after {
+    content: "";
+
+    position: absolute;
+    top: 30%;
+    left: 40%;
+
+    display: block;
+    width: 16px;
+    height: 1px;
+
+    background-color: #8d8d8d;
+}
+
+.button--delete::before {
+    transform: rotate(45deg);
+}
+
+.button--delete::after {
+    transform: rotate(-45deg);
+}
+
+.button--delete:focus {
+    outline: none;
+}
+
+.button--delete:hover::before,
+.button--delete:hover::after,
+.button--delete:focus::before,
+.button--delete:focus::after,
+.button--delete:active::before,
+.button--delete:active::after {
+    background-color: #ff6c00;
+}
+
+@media screen and (min-width: 768px) {
+    .button--toapply {
+        min-width: 180px;
+
+        font-size: 16px;
+        line-height: calc(16px * 1.2);
+
+        border-radius: 30px;
+    }
+
+    .button--order {
+        width: auto;
+    }
+}
+
