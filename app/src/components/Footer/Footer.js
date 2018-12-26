@@ -15,7 +15,7 @@ return (
 <Social />
     <div className="footer__wrapper">
         <a className="footer__logo logo logo--footer" href="#">
-            <img className="logo__image" src={require("../../img/logo-grey.png")} width="100" height="56" alt="Логотип SHOP 24"/>
+            <img className="footer__logo-image logo__image" src={require("../../img/logo-grey.png")} width="100" height="56" alt="Логотип SHOP 24"/>
         </a>
     <Telephone />
     <SiteNavigation />
