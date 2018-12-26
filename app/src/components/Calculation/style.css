@@ -33,7 +33,7 @@
     color: #ff6c00;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1150px) {
 
     .basket__calculation {
         margin-top: 0;

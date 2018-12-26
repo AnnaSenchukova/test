@@ -91,7 +91,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 767px) {
     .products__price {
         display: none;
     }

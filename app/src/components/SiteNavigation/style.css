@@ -37,43 +37,33 @@
 @media screen and (min-width: 768px) {
     .site-navigation {
         flex-direction: row;
-        width: 60%;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .site-navigation__item {
-        width: 20%;
+        width: auto;
+        max-width: 200px;
+        margin-right: 0;
     }
 
     .site-navigation__link {
+        padding-left: 0;
+
         background-color: transparent;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .submenu--header {
-        position: absolute;
-        top: 101%;
-        left: 0;
-
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding-left: 20px;
+@media screen and (min-width: 1150px) {
+    .site-navigation {
+        width: 60%;
     }
 
-    .submenu__item {
-        margin-right: 30px;
+    .site-navigation__item {
+        max-width: 175px;
     }
 
-    .submenu--header .submenu__link--active {
-        border-bottom: 3px solid #ff6c00;
-    }
-
-    .submenu--footer .submenu__link {
-        padding-bottom: 15px;
-
-        color: #cacaca;
-
-        background-color: transparent;
+    .site-navigation__link {
+        padding-top: 0;
     }
 }

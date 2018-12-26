@@ -74,7 +74,7 @@
     font-weight: 500;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1150px) {
     .add__title {
         max-width: 315px;
         margin: 0 auto;

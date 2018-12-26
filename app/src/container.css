@@ -13,7 +13,7 @@
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1150px) {
     .container {
         width: 100%;
         max-width: 1200px;

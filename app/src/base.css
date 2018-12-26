@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 *,
@@ -9,8 +10,11 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     min-width: 280px;
+    height: 100%;
     margin: 0 auto;
     padding: 0;
 

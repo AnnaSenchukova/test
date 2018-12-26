@@ -180,5 +180,9 @@
     .button--order {
         width: auto;
     }
+
+    .button--subscribe {
+        margin-left: 20px;
+    }
 }
 

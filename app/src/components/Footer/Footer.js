@@ -13,12 +13,14 @@ return (
 <footer className="footer">
 <Mailing />
 <Social />
-    <div className="footer__wrapper">
+    <div className="footer__wrapper footer__wrapper-navigation">
+    <div className="footer__wrapper-inner container">
         <a className="footer__logo logo logo--footer" href="#">
             <img className="footer__logo-image logo__image" src={require("../../img/logo-grey.png")} width="100" height="56" alt="Логотип SHOP 24"/>
         </a>
     <Telephone />
     <SiteNavigation />
+    </div>
      </div>
 <Copyright />
 </footer>
