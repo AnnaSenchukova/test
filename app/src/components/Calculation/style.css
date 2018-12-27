@@ -8,7 +8,6 @@
 }
 
 .basket__calculation-stroke {
-    display: block;
     width: 100%;
 }
 
@@ -23,7 +22,7 @@
 }
 
 .basket__calculation-sum {
-    width: 30%;
+    width: 32%;
 
     text-align: right;
 }
@@ -33,9 +32,20 @@
     color: #ff6c00;
 }
 
-@media screen and (min-width: 1150px) {
+.basket__calculation-name--total,
+.basket__calculation-sum--total {
+    padding-top: 30px;
+}
 
+@media screen and (min-width: 768px) {
     .basket__calculation {
+        width: 37%;
         margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .basket__calculation {
+        width: 30.35%;
     }
 }

@@ -23,10 +23,10 @@ return (
                                 </td>
                             </tr>
                             <tr className="basket__calculation-stroke">
-                                <td className="basket__calculation-name">
+                                <td className="basket__calculation-name basket__calculation-name--total">
                                     Всего:
                                 </td>
-                                <td className="basket__calculation-sum">
+                                <td className="basket__calculation-sum basket__calculation-name--total ">
                                     8 000 руб.
                                 </td>
                             </tr>

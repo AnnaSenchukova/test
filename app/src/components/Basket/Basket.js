@@ -9,7 +9,7 @@ import './style.css';
 function Basket() {
 return (
 <section className="basket">
-        <h2 className="basket__title container">
+        <h2 className="basket__title">
             Ваша корзина
         </h2>
         <div className="basket__wrapper-table container">
