@@ -33,7 +33,22 @@
     padding-top: 20px;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
+
+    .basket__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        order: 0;
+        width: 100%;
+        margin-bottom: 35px;
+
+        border-top: 2px solid #ff8c00;
+    }
+}
+
+@media screen and (min-width: 1150px){
     .basket {
         margin-top: 70px;
 
@@ -42,7 +57,7 @@
 
     .basket__title {
         display: block;
-        max-width: 178px;
+        width: max-content;
         margin: 0 auto;
         margin-top: -15px;
         padding: 0 15px;
@@ -57,11 +72,9 @@
     }
 
     .basket__wrapper {
-        order: 0;
-        width: 100%;
-        padding-top: 0;
+        margin-bottom: 110px;
 
-        border-top: none;
+        border-top: 2px solid #d9d9d9;
     }
 }
 

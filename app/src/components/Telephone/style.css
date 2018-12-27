@@ -1,27 +1,60 @@
 /*telephone*/
 
 .telephone {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: none;
 }
 
-.telephone__number {
-    font-size: 30px;
-    line-height: calc(30px * 1.2);
-    color: #f3f3f3;
-}
-
-.telephone__descriptions {
-    padding-bottom: 10px;
-
-    font-size: 14px;
-    line-height: calc(14px * 1.2);
-    color: #f3f3f3;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
     .telephone {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 73%;
+    }
+
+    .telephone__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .telephone__wrapper .telephone__number {
+        margin-right: 45px;
+    }
+
+    .telephone__number {
+        font-size: 30px;
+        line-height: calc(30px * 1.2);
+        color: #f3f3f3;
+    }
+
+    .telephone__number:hover,
+    .telephone__number:focus {
+        color: #ffc800;
+    }
+
+    .telephone__number:active {
+        color: #000000;
+
+        opacity: 0.3;
+    }
+
+    .telephone__descriptions {
+        padding-bottom: 10px;
+
+        font-size: 14px;
+        line-height: calc(14px * 1.2);
+        color: #f3f3f3;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .telephone {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .telephone__wrapper .telephone__number {
+        margin-right: 0;
     }
 }

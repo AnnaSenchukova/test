@@ -6,7 +6,7 @@ function Add() {
 return (
 
                 <section className="add">
-                    <h2 className="add__title title container">
+                    <h2 className="add__title title">
                         Добавьте к вашему заказу
                     </h2>
                     <ul className="add__list container">

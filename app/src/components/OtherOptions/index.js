@@ -6,6 +6,7 @@ import './style.css';
 function OtherOptions() {
 return (
     <div className="header__wrapper other-options">
+    <div className=" other-options__wrapper container">
         <div className="other-options__telephone">
             <a className="other-options__number" href="tel:89005007555">
                 8 (800) 500-75-55
@@ -24,6 +25,7 @@ return (
             <a className="other-options__link other-options__link--live" href="#">
                 Смотрите наш прямой эфир
             </a>
+        </div>
         </div>
     </div>
 )

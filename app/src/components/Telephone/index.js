@@ -7,6 +7,7 @@ function Telephone() {
 return (
 
         <div className="footer__telephone telephone">
+        <div className="telephone__wrapper">
             <a className="telephone__number" href="tel:89005007555">
                 8 (800) 500-75-55
                 <sup className="telephone__star">*</sup>
@@ -15,6 +16,7 @@ return (
                  <sup className="telephone__star">*</sup>
           Бесплатный звонок по России
         </span>
+        </div>
             <a className="telephone__number" href="tel:84957339603">
                 8 (495) 733-96-03
             </a>

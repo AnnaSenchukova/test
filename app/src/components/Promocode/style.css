@@ -1,3 +1,8 @@
+.basket__promocode {
+    display: flex;
+    justify-content: space-between
+}
+
 .basket__promocode-slogan {
     display: none;
 }
@@ -5,7 +10,6 @@
 .basket__promocode-field {
     width: 69%;
     height: 44px;
-    margin-top: 10px;
     padding-left: 15px;
 
     border: 1px solid #dadada;
@@ -19,16 +23,35 @@
     color: #d0d0d0;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
+    .basket__promocode {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 57%;
+    }
+
     .basket__promocode-slogan {
         display: block;
+        width: 100%;
         margin: 0;
         padding-bottom: 10px;
     }
 
     .basket__promocode-field {
-        width: 277px;
+        width: 54%;
+        max-width: 277px;
         margin-top: 0;
+        margin-right: 10px;
     }
 }
 
+@media screen and (min-width: 1150px) {
+    .basket__promocode {
+        width: 50%;
+    }
+
+    .basket__promocode-field {
+        width: 69%;
+        margin-right: 20px;
+    }
+}

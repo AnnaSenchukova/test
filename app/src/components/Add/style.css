@@ -74,19 +74,37 @@
     font-weight: 500;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px){
+    .add {
+        border-top: 2px solid #ff8c00;
+    }
+
     .add__title {
-        max-width: 315px;
+        font-size: 22px;
+        line-height: calc(22px * 1.2);
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .add {
+        border-top: 2px solid #d9d9d9;
+    }
+
+    .add__title {
+        width: max-content;
         margin: 0 auto;
-        margin-top: -15px;
+        margin-top: -40px;
         padding-bottom: 30px;
 
         text-align: center;
         font-weight: 500;
-        font-size: 22px;
-        line-height: calc(22px * 1.2);
         color: #000000;
 
         background-color: #ffffff;
+    }
+
+    .add__list {
+        border-left: none;
+        border-right: none;
     }
 }

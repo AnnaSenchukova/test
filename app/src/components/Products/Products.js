@@ -14,7 +14,7 @@ return (
                 <th className="products__caption">
                     Описание
                 </th>
-                <th className="products__caption">
+                <th className="products__caption products__caption--center">
                     Количество
                 </th>
                 <th className="products__caption products__caption--center">
