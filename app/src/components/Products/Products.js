@@ -1,13 +1,28 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {render} from 'react-dom';
 import Product from '../Product/ProductItem';
 import cartDataList from '../../js/cartDataProviderTest';
 import './style.css';
 
-function Products(props) {
+class Products extends Component {
+
+state = {
+    cartDataList: []
+}
+
+closeClick = chosenId => this.setState({
+    cartDataList: this.state.cartDataList.filter(( cartData, id ) => id !== chosenId)
+  });
+
+
+render() {
 const productItem = cartDataList.map(cartData =>
-<tr key = {cartData.id}><Product cartData = {cartData}/></tr>
- )
+<Product
+key = {cartData.id}
+cartData = {cartData}
+/>
+)
+
 return (
         <table className="basket__list products">
             <thead className="products__list-header">
@@ -32,6 +47,10 @@ return (
             {productItem}
         </table>
     )
+}
+
+
+
 }
 
 

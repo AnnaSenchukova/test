@@ -97,8 +97,6 @@ return (
 
 cleanClick = () => {
 console.log('click');
-cartDataList.splice(cartDataList[0], 1);
-alert(cartDataList);
 }
 
 }
