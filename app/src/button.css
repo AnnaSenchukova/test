@@ -14,9 +14,9 @@
     border-radius: 30px;
 }
 
-.button:hover,
-.button:active,
-.button:focus {
+.button:not(.button--delete):not(.button--min):not(.button--max):hover,
+.button:not(.button--delete):not(.button--min):not(.button--max):active,
+.button:not(.button--delete):not(.button--min):not(.button--max):focus {
     background-color: #ff6c00;
     outline: none;
 }

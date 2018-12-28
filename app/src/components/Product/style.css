@@ -83,7 +83,7 @@
     appearance: none;
 }
 
-.products__price-value {
+.products__price {
     margin: 0;
 
     font-weight: 500;
@@ -109,7 +109,7 @@
         right: 0;
     }
 
-    .products__price-value {
+    .products__price {
         position: absolute;
         bottom: 4%;
         right: 0;
@@ -132,7 +132,7 @@
         padding-right: 15px;
     }
 
-    .products__cell--description .products__price-value {
+    .products__cell--description .products__price {
         display: none;
     }
 
